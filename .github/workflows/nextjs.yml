@@ -34,14 +34,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "18"
           cache: 'npm'
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm install
-      - name: Build the project
+      - name: Build with Next.js
         run: npm run build
-      - name: Export static files
-        run: npm run export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -58,5 +58,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          publish_dir: ./out
