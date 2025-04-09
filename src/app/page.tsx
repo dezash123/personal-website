@@ -24,7 +24,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="md:w-1/2 flex justify-center">
+            <div className="md:w-1/2 flex justify-center">f
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-dark-100 shadow-lg">
                 {/* Replace with your image */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent flex items-center justify-center text-white text-6xl font-bold">
